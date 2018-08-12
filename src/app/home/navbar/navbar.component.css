@@ -1,6 +1,7 @@
 .contaner {
   height: 44px;
   background-color: rgba(0, 0, 0, 0.8);
+
 }
 
 .left {
@@ -109,9 +110,7 @@ ul li:not(.logo) a:active {
 .small-menu ul {
   list-style-type: none;
   padding: 0px;
-  position: fixed;
-  top:0px;
-  left:0px;
+
 }
 
 .small-menu ul li:last-child{

@@ -2,3 +2,26 @@
 
   font-family: "Fira Code Medium";
 }
+.container{
+
+  padding: 0px;
+}
+app-navbar{
+  padding: 0px;
+  position: fixed;
+  top:0px;
+  left:0px;
+  z-index: 10000;
+}
+
+.secondRow
+
+{
+  margin-top: 44px;
+
+}
+.firstRow{
+
+
+}
+

@@ -8,8 +8,8 @@ import {falseIfMissing} from "protractor/built/util";
 })
 export class RightCComponent implements OnInit,AfterContentInit {
 
-  helloWorld = "";
-  showTitle:boolean=true;
+  helloWorld = "{ Hello World ...}";
+
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {
   }
