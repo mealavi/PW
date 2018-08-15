@@ -1,0 +1,33 @@
+*{
+
+  font-family: "Fira Code Medium";
+}
+.zeroRow{
+
+
+  background-color: whitesmoke;
+}
+.container .firstRow .secondRow{
+
+  padding: 0px;
+}
+app-navbar{
+  padding: 0px;
+  position: fixed;
+  top:0px;
+  left:0px;
+  z-index: 10000;
+}
+
+.secondRow
+
+{
+  margin-top: 44px;
+  margin-bottom: 44px;
+
+}
+.zeroRow * {
+
+  padding: 0px;
+
+}

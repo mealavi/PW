@@ -1,0 +1,67 @@
+.footerWrapper{
+background-color: black;
+}
+.highlighter{
+
+  height: 10px;
+  background: linear-gradient(to bottom, whitesmoke , black);
+}
+.subscriber button
+{
+
+  background-color:rgb(253,224,19);
+}
+ strong{
+
+  color: rgb(253,224,19);
+}
+ .subscriber input{
+
+   outline: none;
+ }
+.subscriber h4{
+  color: #B7B7B7;
+}
+.footerWrapper{
+
+
+}
+.about p , h4{
+
+  color: #B7B7B7;
+}
+.navigation li{
+  cursor: pointer;
+  color: #B7B7B7;
+  margin-top:20px;
+  outline: none;
+  transition: color 0.5s;
+}
+.navigation li:hover {
+    color:#4B4B4B;
+
+  }
+
+.contact
+{
+  margin-top: 80px;
+  color: #B7B7B7;
+  margin-bottom: 40px;
+
+}
+.contact i a{
+  text-decoration: none;
+  list-style: none;
+
+}
+.contact i{
+  transition: color 0.5s;
+
+}
+.contact .row{
+  text-align: center;
+}
+.contact i:hover {
+  color:#4B4B4B;
+
+}
