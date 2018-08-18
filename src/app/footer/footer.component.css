@@ -3,17 +3,18 @@ background-color: black;
 }
 .highlighter{
 
-  height: 10px;
-  background: linear-gradient(to bottom, whitesmoke , black);
+  height: 20px;
+margin-top:-20px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0) ,black);
 }
 .subscriber button
 {
 
-  background-color:rgb(253,224,19);
+  background-color: rgb(255, 200, 0);
 }
  strong{
 
-  color: rgb(253,224,19);
+  color: rgb(255, 214, 9);
 }
  .subscriber input{
 

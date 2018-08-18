@@ -5,3 +5,23 @@ color:#212121;
 }
 
 
+h1
+{
+
+  text-align: center;
+}
+.container
+{
+
+  padding-bottom: 100px;
+}
+.input-group
+{
+
+  margin-bottom: 30px;
+}
+textarea{
+
+
+  margin-bottom: 8px;
+}

@@ -8,7 +8,7 @@ import {falseIfMissing} from "protractor/built/util";
 })
 export class RightCComponent implements OnInit,AfterContentInit {
 
-  helloWorld = "{ Hello World ...}";
+  formHeight:number=window.innerHeight-(window.innerHeight/10);
 
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {
