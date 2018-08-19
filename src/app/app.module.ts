@@ -15,12 +15,20 @@ import { ContactComponent } from './contact/contact.component';
 import { ServicesComponent } from './services/services.component';
 import {RouterModule, Routes} from "@angular/router";
 import { HomeComponent } from './home/home.component';
+import {FormsdateService} from "./share/formsdate.service";
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import {HttpClientModule} from "@angular/common/http";
+import {HttpModule} from "@angular/http";
 
 const appRoutes:Routes=[
 
   {path:'',component:HomeComponent},
   {path:'contact',component:ContactComponent},
-  {path:'services',component:ServicesComponent}
+  {path:'services',component:ServicesComponent},
+  {path:'services/:id',component:ServicesComponent},
+  {path:'not-found',component:PageNotFoundComponent},
+  {path:'**',redirectTo:'/not-found'}
+
 
 ]
 
@@ -36,12 +44,17 @@ const appRoutes:Routes=[
     ContactComponent,
     ServicesComponent,
     HomeComponent,
+    PageNotFoundComponent,
+
+
 
   ],
   imports: [
     BrowserModule,
     AngularFontAwesomeModule,
     FormsModule,
+    HttpClientModule,
+    HttpModule,
     RouterModule.forRoot(appRoutes)
 
   ],

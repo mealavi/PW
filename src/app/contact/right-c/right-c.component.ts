@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, ElementRef, OnInit, Renderer2, ViewChild} from '@angular/core';
+import {AfterContentInit, Component, ElementRef, OnChanges, OnInit, Renderer2, ViewChild} from '@angular/core';
 import {falseIfMissing} from "protractor/built/util";
 
 @Component({
@@ -6,10 +6,10 @@ import {falseIfMissing} from "protractor/built/util";
   templateUrl: './right-c.component.html',
   styleUrls: ['./right-c.component.css']
 })
-export class RightCComponent implements OnInit,AfterContentInit {
+export class RightCComponent implements OnInit,AfterContentInit,OnChanges {
 
-  formHeight:number=window.innerHeight-(window.innerHeight/10);
-
+  formHeight:number=window.innerHeight-(window.innerHeight/10) -10;
+  formTopPadding:number=(this.formHeight-590)/2
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {
   }
@@ -24,7 +24,10 @@ export class RightCComponent implements OnInit,AfterContentInit {
 
 
   }
+  ngOnChanges(){
 
+    this.formHeight =window.innerHeight-(window.innerHeight/10) -10;
 
+  }
 
 }

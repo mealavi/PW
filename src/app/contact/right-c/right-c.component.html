@@ -1,18 +1,18 @@
 <div class="container col-xs-12 col-sm-12 col-md-12 col-lg-12">
-<div class="row ">
+<div class="row " [ngStyle]="{height:formHeight+'px',paddingTop:formTopPadding+'px'}">
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="row">
 
-      <h1  class="page-header col-sm-12 col-md-12 col-lg-12 ">I will replay asap!</h1>
+      <h1  class="page-header col-sm-12 col-md-12 col-lg-12 ">Let's talk ...</h1>
 
 
     </div>
 
   </div>
 
-  <div class="row">
+  <div class="row formWrapper" >
 
-    <form class="col-xs-offset-1 col-xs-10" [ngStyle]="{height:formHeight+'px'}">
+    <form class="col-xs-offset-1 col-xs-10" >
       <div class="col-xs-offset-1 col-xs-10 ">
         <div class="input-group">
           <input type="text" class="form-control" placeholder="your name ...">
@@ -33,19 +33,19 @@
         <div class="input-group">
           <input type="text" class="form-control" placeholder="your website ...">
           <span class="input-group-btn">
-        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
+        <button class="btn btn-default " type="button"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></button>
       </span>
         </div>
       </div>
       <div class="col-xs-offset-1 col-xs-10 ">
 
-        <textarea type="text" class="col-xs-10 form-control" placeholder="Search for..."  [ngStyle]="{height:(formHeight-342)+'px'}" ></textarea>
+        <textarea type="text" class="col-xs-10 form-control" placeholder="Your message..."  ></textarea>
 
 
       </div>
       <div class="col-xs-offset-1 col-xs-12 ">
 
-        <button class="btn btn-default col-xs-offset-7 col-xs-3" type="button"><span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
+        <button class="btn btn-default col-xs-offset-7 col-xs-3 changeHover" type="button">Send <span class="glyphicon glyphicon-send" aria-hidden="true"></span></button>
       </div>
 
     </form>

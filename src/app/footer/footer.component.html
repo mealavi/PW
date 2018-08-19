@@ -8,9 +8,9 @@
       <h4 class="page-header">STAY CONNECTED WITH <strong>me</strong>!</h4>
       <div class="col-xs-12 ">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search for...">
+        <input type="text" class="form-control" style="border-color: black" placeholder="your Email...">
         <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Subscribe!</button>
+        <button class="btn btn-default" type="button" style="border-color: black">Subscribe!</button>
       </span>
       </div><!-- /input-group -->
       </div>
@@ -27,9 +27,9 @@
     <div class="navigation col-xs-6 col-sm-4 col-md-4 col-lg-4">
       <h4 class="page-header">Nav<strong>I</strong>gate</h4>
       <ul>
-        <li routerLink="/">Home</li>
-        <li routerLink="/services">Services</li>
-        <li routerLink="/contact">Contact</li>
+        <li (click)="onLeaveContact('')">Home</li>
+        <li (click)="onLeaveContact('services')">Services</li>
+        <li  routerLink="/contact" >Contact</li>
       </ul>
     </div>
 

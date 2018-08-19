@@ -3,7 +3,21 @@
   background: url("assets/man.jpg")no-repeat center center;
   background-size: cover;
 
+
+  /* Set a specific height */
+
+
+  /* Create the parallax scrolling effect */
+
+
+
+
+
   padding: 0px;
+}
+.smallPic{
+
+  background-attachment: fixed;
 }
 .mask{
 
