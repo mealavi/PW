@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit , OnChanges {
      this.projects=this.projectRepoService.projects;
 
   }
-
+  showDetails(){}
   @HostListener('window:resize',['$event'])
   changeSize(event){
 

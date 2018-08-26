@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import {ProjectModel} from "../../share/models/project.model";
 import {Http} from "@angular/http";
 
@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
 })
 export class ProjectComponent implements OnInit {
   @Input() project:ProjectModel;
-
+  @Output() projectUot:ProjectModel;
 
 
 

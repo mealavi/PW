@@ -20,7 +20,7 @@
     </div>
     <div class="right-c col-sm-6" [ngStyle]="{height:Height}">
 
-    <app-project *ngFor="let project of projects"  [project]="project" ></app-project>
+    <app-project *ngFor="let project of projects"  [project]="project"  (click)="showDetails($event)"></app-project>
 
     </div>
   </div>
