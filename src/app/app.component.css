@@ -5,7 +5,7 @@
 .zeroRow{
 
 
-  background-color: whitesmoke;
+  background-color: rgba(239, 239, 239, 0.5)
 }
 .container .firstRow .secondRow{
 
@@ -24,7 +24,7 @@ app-navbar{
 {
   margin-top: 44px;
   margin-bottom: 44px;
-
+  padding-top: 44px;
 }
 .zeroRow * {
 

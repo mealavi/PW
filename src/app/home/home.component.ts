@@ -1,15 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, HostListener, OnChanges, OnInit} from '@angular/core';
+import {ProjectsRepoService} from "../share/projectsRepo.service";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
-
-  constructor() { }
+export class HomeComponent implements OnInit , OnChanges {
+  Height=window.innerHeight+'px';
+extraHeight=1.2*window.innerHeight+'px';
+   constructor(private projectRepoService:ProjectsRepoService) { }
 
   ngOnInit() {
+  }
+
+  @HostListener('window:resize',['$event'])
+  changeSize(event){
+
+    this.Height=window.innerHeight+'px';
+  }
+
+  ngOnChanges(){
+
+
+
   }
 
 }

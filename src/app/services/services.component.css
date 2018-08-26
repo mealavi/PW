@@ -14,14 +14,15 @@
 
 .Llogo{
 
-  height:200px;
-  margin-top:100px;
+  height:374px;
+margin-top: 40px;
+padding-top: 100px;
 
 }
 
 .container{
 
-  padding-top:50px;
+
 }
 i{
 
@@ -29,7 +30,15 @@ i{
 }
 .pl {
 
+margin-bottom: 100px;
 
-  transition:margin-top 0.5s,margin-left 0.5s;
+}
+.Rtext{
+  height:374px;
+  border-left: 1px solid dimgray;
+}
+.page-header
+{
 
+  margin-bottom: 60px;
 }

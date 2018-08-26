@@ -19,6 +19,7 @@ import {FormsdateService} from "./share/formsdate.service";
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {HttpClientModule} from "@angular/common/http";
 import {HttpModule} from "@angular/http";
+import { ProjectComponent } from './home/project/project.component';
 
 const appRoutes:Routes=[
 
@@ -45,6 +46,7 @@ const appRoutes:Routes=[
     ServicesComponent,
     HomeComponent,
     PageNotFoundComponent,
+    ProjectComponent,
 
 
 
