@@ -18,8 +18,9 @@ import { HomeComponent } from './home/home.component';
 import {FormsdateService} from "./share/formsdate.service";
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {HttpClientModule} from "@angular/common/http";
-import {HttpModule} from "@angular/http";
+import {Http, HttpModule} from "@angular/http";
 import { ProjectComponent } from './home/project/project.component';
+import {ProjectsRepoService} from "./share/projectsRepo.service";
 
 const appRoutes:Routes=[
 
@@ -60,7 +61,7 @@ const appRoutes:Routes=[
     RouterModule.forRoot(appRoutes)
 
   ],
-  providers: [],
+  providers:[],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

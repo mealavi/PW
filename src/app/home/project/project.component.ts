@@ -16,22 +16,6 @@ export class ProjectComponent implements OnInit {
   constructor(private http:Http) { }
 
 
-  ngOnInit(){
-
-
-    this.http.get('https://api.github.com/users/mealavi/repos').subscribe(
-      (response)=>{
-        response.json().forEach(
-          (data)=>{
-            console.log(data.name)
-          }
-        )
-console.log(response.json())
-
-      },
-      (error)=>console.log(error)
-    )
-
-  }
+  ngOnInit(){}
 
 }
