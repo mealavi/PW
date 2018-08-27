@@ -21,6 +21,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {Http, HttpModule} from "@angular/http";
 import { ProjectComponent } from './home/project/project.component';
 import {ProjectsRepoService} from "./share/projectsRepo.service";
+import {TypingAnimationDirective} from "angular-typing-animation";
 
 const appRoutes:Routes=[
 
@@ -48,7 +49,7 @@ const appRoutes:Routes=[
     HomeComponent,
     PageNotFoundComponent,
     ProjectComponent,
-
+    TypingAnimationDirective,
 
 
   ],

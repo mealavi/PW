@@ -1,29 +1,59 @@
-<div class="container col-xs-12" [ngStyle]="{height:Height}">
+<div class="container-fluid">
   <div class="row">
+    <div class="container col-xs-12 firstRow" [ngStyle]="{height:Height}">
+    <div class="col-xs-12 wallpaper ">
 
-
-
-
-    <h1 class="col-xs-6 title" style="text-align: right;  background-color: whitesmoke;border: 0px;padding-right:0px; ">Activ</h1> <h1 class="title" style="color:whitesmoke;text-align: left;background-color: #212121">ities</h1>
-
-    <div class="left-c col-sm-6 ">
-
-      <div class="row">
-
-        <div class="details-c">
-          <img src="" alt="">
-          <h1></h1>
-
-
-        </div>
-      </div>
+      <span class="question page-header " typingAnimation [typeSpeed]="50" [condition]="start" [startDelay]="100" >
+        {{ stringInterpolation }}
+      </span><br><br>
+      <span typingAnimation [typeSpeed]="50" [condition]="start2" class="" [startDelay]="2500" >
+        {{ stringInterpolation2 }}
+      </span><br>
+      <span typingAnimation [typeSpeed]="50" [condition]="start3"  class=""  [startDelay]="6500" >
+        {{ stringInterpolation3 }}
+      </span><br><br>
+      <span class="helloWorld" typingAnimation [typeSpeed]="50" class=""  [condition]="start4" [startDelay]="9500" >
+        {{ helloWorld }}
+      </span><br>
+      <span  typingAnimation [typeSpeed]="50"  class=""  style="padding-top: 0px;" [condition]="start5" [startDelay]="11000" >
+        {{ stringInterpolation5 }}
+      </span>
+      <span  typingAnimation [typeSpeed]="150" class=" laugh"  style="padding-top: 0px;" [condition]="start6" [startDelay]="13500" >
+        {{ stringInterpolation6 }}
+      </span>
     </div>
-    <div class="right-c col-sm-6" [ngStyle]="{height:Height}">
-
-    <app-project *ngFor="let project of projects"  [project]="project"  (click)="showDetails($event)"></app-project>
 
     </div>
   </div>
+  <div class="row">
+    <div class="container col-xs-12" [ngStyle]="{height:Height}">
+      <div class="row">
 
 
+        <h1 class="col-xs-6 title"
+            style="text-align: right;  background-color: whitesmoke;border: 0px;padding-right:0px; ">Activ</h1>
+        <h1 class="title" style="color:whitesmoke;text-align: left;background-color: #212121">ities</h1>
+
+        <div class="left-c col-sm-6 ">
+
+          <div class="row">
+
+            <div class="details-c">
+              <img src="" alt="">
+              <h1></h1>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="right-c col-sm-6" [ngStyle]="{height:Height}">
+
+          <app-project *ngFor="let project of projects" [project]="project" (click)="showDetails($event)"></app-project>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
 </div>
