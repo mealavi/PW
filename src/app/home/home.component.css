@@ -59,6 +59,7 @@ span
   padding-top: 100px;
   color:  rgb(172, 143, 9);
   font-size: 35px;
+  border-bottom: 1px solid rgba(140,140,140,0.4);
 }
 .helloWorld{
   font-size: 30px;
